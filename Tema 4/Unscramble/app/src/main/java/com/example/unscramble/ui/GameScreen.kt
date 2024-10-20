@@ -191,7 +191,7 @@ fun GameLayout(modifier: Modifier = Modifier,
                 style = typography.titleMedium
             )
             OutlinedTextField(
-                value = userGuess, //se mostrará la palabra que el usuario cree que es.
+                value = userGuess.trim(), //se mostrará la palabra que el usuario cree que es.
                 singleLine = true,
                 shape = shapes.large,
                 modifier = Modifier.fillMaxWidth(),
